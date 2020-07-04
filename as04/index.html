@@ -1,115 +1,133 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-	<meta charset="UTF-8">
-	<title>3D Computer Graphics</title>
-	<link rel="stylesheet" href="css/styles.css">
+    <meta charset="UTF-8">
+    <title>Images, Gradients, Fonts</title>
+    <link rel="stylesheet" href="css/styles.css">
 </head>
+
 <body>
-	<header>
-		<h1>3D Computer Graphics</h1>
-		<nav>
-			<!--
-				TODO Adapt Existing: Convert the list below to an ordered list. Hint: you will have two ordered lists.
-			-->
-			1 Introduction
-			2 History
-			3 Overview
-				1 Modeling
-				2 Layout and animation
-				3 Rendering
-			4 Communities
-			5 Distinction from photo realistic 2D graphics
-			
-		</nav>
-	</header>
-
-	<hr>
-	<a style="font-size:.5em;" href="http://icarus.cs.weber.edu/~lfernandez/Web1400/scraping/checkAssgn4.html">Grading Script</a>
-    <hr>
-	<section id="introduction">
-		<!--
-			TODO New Lines: Create an image element here. The file is given to you: images/intro_image.png
-		-->
-
-		<h2>Introduction</h2>
-		<p>3D computer graphics (in contrast to 2D computer graphics) are graphics that use a three-dimensional representation of geometric data (often Cartesian) that is stored in the computer for the purposes of performing calculations and rendering 2D images. Such images may be stored for viewing later or displayed in real-time.</p>
-
-		<p>3D computer graphics rely on many of the same algorithms as 2D computer vector graphics in the wire-frame model and 2D computer raster graphics in the final rendered display. In computer graphics software, the distinction between 2D and 3D is occasionally blurred; 2D applications may use 3D techniques to achieve effects such as lighting, and 3D may use 2D rendering techniques.</p>
-
-		<p>3D computer graphics are often referred to as 3D models. Apart from the rendered graphic, the model is contained within the graphical data file. However, there are differences. A 3D model is the mathematical representation of any three-dimensional object. A model is not technically a graphic until it is displayed. A model can be displayed visually as a two-dimensional image through a process called 3D rendering, or used in non-graphical computer simulations and calculations. With 3D printing, 3D models are similarly rendered into a 3D physical representation of the model, with limitations to how accurate the rendering can match the virtual model.</p>
-	</section>
-
-	<section id="history">
-		<h2>History</h2>
-		<p>William Fetter was credited with coining the term computer graphics in 1961 to describe his work at Boeing. One of the first displays of computer animation was Futureworld (1976), which included an animation of a human face and a hand that had originally appeared in the 1971 experimental short A Computer Animated Hand, created by University of Utah students Edwin Catmull and Fred Parke.</p>
-
-		<!-- TODO New Line: Create an audio element here. Turn controls on. The src will be http://icarus.cs.weber.edu/~lfernandez/Web1400/streaming/John_Wesley_Coleman.mp3 -->
-	</section>
+    <div id="container">
+        <header>
+            <a style="font-size:.5em;" href="http://icarus.cs.weber.edu/~lfernandez/Web1400/scraping/checkAssgn4.html">Grading Script</a>
+            <h1>Media, Gradients, Fonts</h1>
+            <nav>
+                <div>Table of Contents</div>
+                <!--
+				TODO Create an ordered list with a nested unordered list in the Misc section.  Add an internal link to each list item
+				so that when each is clicked it scrolls the user down to the appropriate place in the page.
+            
+                Introduction
+                Audio
+                Video
+                Images
+                Misc
+                    Example iframe
+			    -->
 
 
-	<section id="overview">
-		<h2>Overview</h2>
+            </nav>
+        </header>
 
-		<p>
-			3D computer graphics creation falls into three basic phases:<br>
+        <hr>
 
-			<!--
-				TODO Adapt Existing: Convert the list below to an unordered list.
-			-->
-			3D modeling - the process of forming a computer model of an object's shape
-			Layout and animation - the motion and placement of objects within a scene
-			3D rendering - the computer calculations that, based on light placement, surface types, and other qualities, generate the image
-		</p>
+        <section id="introduction">
+            <!--
+			TODO New Lines: Create an image element here. The file is given to you: images/soup.png.  Wrap it in 
+            a figure and a figcaption that is centered and says soup.  Make sure its floated right
+		    -->
+            <div id="flushRight">
+                <figure>
+                    <img src="images/soup.png" height="200px" id="introImage" />
+                    <figcaption>Soup</figcaption>
+                </figure>
+            </div>
 
-		<section id="modeling">
-			<h3>Modeling</h3>
-			<p>The model describes the process of forming the shape of an object. The two most common sources of 3D models are those that an artist or engineer originates on the computer with some kind of 3D modeling tool, and models scanned into a computer from real-world objects. Models can also be produced procedurally or via physical simulation. Basically, a 3D model is formed from points called vertices (or vertexes) that define the shape and form polygons. A polygon is an area formed from at least three vertexes (a triangle). A four-point polygon is a quad, and a polygon of more than four points is an n-gon. The overall integrity of the model and its suitability to use in animation depend on the structure of the polygons.</p>
-		</section>
+            <h2>Introduction</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur nec feugiat lorem. Nunc finibus, dolor
+                et
+                imperdiet aliquet, turpis mauris finibus ante, eget efficitur massa ligula non lacus. Quisque varius
+                odio in
+                ipsum vestibulum ornare. Donec justo lacus, ornare non mollis ut, auctor vitae velit. Orci varius
+                natoque
+                penatibus et magnis dis parturient montes, nascetur ridiculus mus. Ut neque nulla, auctor vel dui eget,
+                ullamcorper porttitor elit.</p>
 
-		<section id="animation">
-			<h3>Layout and animation</h3>
-			<p>Before rendering into an image, objects must be placed (laid out) in a scene. This defines spatial relationships between objects, including location and size. Animation refers to the temporal description of an object, i.e., how it moves and deforms over time. Popular methods include keyframing, inverse kinematics, and motion capture. These techniques are often used in combination. As with modeling, physical simulation also specifies motion.</p>
+            <p>Etiam imperdiet neque vel risus efficitur, id feugiat diam laoreet. Etiam porta ultrices volutpat. Nunc
+                sem mi, viverra sed justo in, venenatis ultrices dui. Integer pharetra, leo quis ultricies dignissim, mi
+                lectus semper augue, quis accumsan ante felis sit amet libero. Nulla pulvinar posuere orci eu
+                pellentesque. </p>
 
-			<h4>Example of 3D animation</h4>
+        </section>
 
-			<!-- TODO New Line: Create a video element here. Turn controls on. The src will be http://icarus.cs.weber.edu/~lfernandez/Web1400/streaming/farm.mp4 -->
-		</section>
+        <section id="audio">
+            <h2>Audio</h2>
+            <p>Aenean malesuada vulputate laoreet. Cras nec mi at nisl faucibus lobortis vitae quis dolor. Aenean porta
+                iaculis tellus, vel consequat nisi commodo non. Donec nisi dui, elementum aliquam tortor in, viverra
+                aliquam turpis. Curabitur cursus molestie quam sed sagittis. Quisque semper est a consectetur consequat.
+                Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Donec tempor
+                sapien eu mauris tincidunt aliquam sed vitae leo.</p>
 
-		<section id="rendering">
-			<h3>Rendering</h3>
-			<p>Rendering converts a model into an image either by simulating light transport to get photo-realistic images, or by applying some kind of style as in non-photorealistic rendering. The two basic operations in realistic rendering are transport (how much light gets from one place to another) and scattering (how surfaces interact with light). This step is usually performed using 3D computer graphics software or a 3D graphics API. Altering the scene into a suitable form for rendering also involves 3D projection, which displays a three-dimensional image in two dimensions.</p>
+            <!-- TODO New Line: Create an audio element here. Turn controls on. The src will be mp34s/hens_ducks.mp3 -->
+            </div>
+        </section>
 
-			<h4>Examples of 3D rendering</h4>
 
-			<!--
+        <section id="video">
+            <h2>Video</h2>
+            <p>Nunc justo felis, suscipit vitae sagittis vel, sagittis in ante. Vestibulum faucibus lectus non
+                condimentum lobortis. Mauris non ipsum ut elit sagittis consectetur. Donec pretium mauris vel sem
+                hendrerit, ac tempor metus vehicula. Nunc malesuada dignissim risus in scelerisque. Maecenas vulputate
+                nisl gravida lorem viverra, ut sollicitudin libero bibendum. Cras vitae finibus sem, ac finibus orci. Ut
+                eget nisi non sem gravida maximus. Integer ullamcorper quam vitae mi rhoncus pharetra. Vestibulum ante
+                ipsum primis in faucibus orci luctus et</p>
+
+            <!-- TODO New Line: Create a video element here. Turn controls on. The src will be mp34s/mexico.mp4 -->
+
+        </section>
+
+        <section id="images">
+            <h2>Images</h2>
+            <p>Nunc justo felis, suscipit vitae sagittis vel, sagittis in ante. Vestibulum faucibus lectus non
+                condimentum lobortis. Mauris non ipsum ut elit sagittis consectetur. Donec pretium mauris vel sem
+                hendrerit, ac tempor metus vehicula. Nunc malesuada dignissim risus in scelerisque. Maecenas vulputate
+                nisl gravida lorem viverra, ut sollicitudin libero bibendum. Cras vitae finibus sem, ac finibus orci. Ut
+                eget nisi non sem gravida maximus. Integer ullamcorper quam vitae mi rhoncus pharetra. Vestibulum ante
+                ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Donec ex lorem, condimentum eget
+                facilisis id, tempor in lorem. Nullam posuere elit nec orci aliquet vestibulum. Curabitur at porttitor
+                magna, vel fermentum sem.</p>
+
+            <!--
 				TODO New Lines: Create three image elements here. The files are given to you:
-				images/left_image.jpg
-				images/center_image.jpg
-				images/right_image.jpg
+				images/statue.jpg
+				images/vineyard.jpg
+				images/bull.jpg
+				
+				Surround each image with a figure and a figure caption that is centered.
+				
+				Make sure these images are all on the same line.  To do so change the figures into inline-block and adjust
+				their width so each take up a little less than 33 percent of the width of the page.  (Since you will be adding
+				margins too it will have to be less than 33 percent.)
 			-->
 
-			<!--
-				TODO New Lines: Surround each image element you just created with a figure and a figure caption element. Use the captions below.
+        </section>
 
-				Left: A 3D rendering with ray tracing and ambient occlusion using Blender and YafaRay.
-				Center: A 3d model of a Dunkerque-class battleship rendered with flat shading.
-				Right: During the 3D rendering step, the number of reflections "light rays" can take, as well as various other attributes, can be tailored to achieve a desired visual effect. Rendered with Cobalt.
-			-->
-		</section>
+        <section id="misc">
+            <h2>Misc.</h2>
+            <p>Donec ex lorem, condimentum eget
+                facilisis id, tempor in lorem. Nullam posuere elit nec orci aliquet vestibulum. Curabitur at porttitor
+                magna, vel fermentum sem.</p>
+            <h3>Example iframe</h3>
+            <p>Nunc justo felis, suscipit vitae sagittis vel, sagittis in ante. Vestibulum faucibus lectus non
+                condimentum lobortis. .</p>
 
-	</section>
+            <!--  TODO: create an iframe here that points to http://wikipedia.org   -->
 
-	<section id="communities">
-		<h2>Communities</h2>
-		<p>There are a multitude of websites designed to help educate and support 3D graphic artists. Some are managed by software developers and content providers, but there are standalone sites as well. These communities allow for members to seek advice, post tutorials, provide product reviews or post examples of their own work.</p>
 
-		<!-- TODO New Line: Create a iframe element here. The src will be www.suwa.org -->
-	</section>
+        </section>
 
-	<section id="photorealistic">
-		<h2>Distinction from photorealistic 2D graphics</h2>
-		<p>Not all computer graphics that appear 3D are based on a wireframe model. 2D computer graphics with 3D photorealistic effects are often achieved without wireframe modeling and are sometimes indistinguishable in the final form. Some graphic art software includes filters that can be applied to 2D vector graphics or 2D raster graphics on transparent layers. Visual artists may also copy or visualize 3D effects and manually render photorealistic effects without the use of filters. See also still life.</p>
-	</section>
+    </div>
 </body>
+
 </html>
