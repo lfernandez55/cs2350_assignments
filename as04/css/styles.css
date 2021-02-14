@@ -9,7 +9,7 @@ You can set up your own selectors and rulesets.  Or feel free to use the skeleto
 }
 
 /*
-    See the video tutorials to see how the body and container work together so that the background image that is
+    Review this jsbin: https://jsbin.com/dufebic/edit?html,output to see how the body and container work together so that the background image that is
 in the body remains fixed while the main content, which is in the container div can scroll up.  It's a nice effect!
 
 The background image I'm using is the sky.png.  
